@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navigate, useRoutes } from "react-router-dom";
+import CssBaseline from "@mui/material/CssBaseline";
+
+// layouts
+import MainLayout from "./layout";
+
+// pages
+import Home from "./pages/Home";
+import Page404 from "./pages/Page404";
+
+///////////////////////////////////////////////
+
+const Router = () => {
+  return useRoutes([
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        { path: "/", element: <Navigate to="/home" /> },
+        { path: "home", element: <Home /> },
+        { path: "404", element: <Page404 /> },
+        { path: "*", element: <Navigate to="/404" /> },
+      ],
+    },
+    { path: "*", element: <Navigate to="/404" replace /> },
+  ]);
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Router />
+    </>
   );
 }
 
