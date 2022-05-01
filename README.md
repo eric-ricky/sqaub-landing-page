@@ -2,7 +2,6 @@
 
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Issues][issues-shield]][issues-url]
 
 ## About the project
 
@@ -20,6 +19,8 @@ This is a simple react one pager template build using the M-UI Library. It is co
 <!-- GETTING STARTED -->
 
 ## Getting Started
+
+- [Demo](https://squab.netlify.app)
 
 ### Prerequisites
 
@@ -62,5 +63,5 @@ Project Link: [https://github.com/eric-ricky/sqaub-landing-page](https://github.
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: linkedin.com/in/rick-otieno-7532b01b9
 [product-preview]: preview.jpeg
