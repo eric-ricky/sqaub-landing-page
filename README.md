@@ -20,7 +20,7 @@ This is a simple react one pager template build using the M-UI Library. It is co
 
 ## Getting Started
 
-- [Demo](https://squab.netlify.app)
+- [Demo](https://sqaub-landing-page.vercel.app/home)
 
 ### Prerequisites
 
